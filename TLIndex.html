@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GolfSweeper!</title>
+        <style>
+            canvas {
+                border: 3px solid #060606;
+                margin: 20px auto;
+                display: block;
+            } 
+        </style>
+         
+        <h1>Welcome to Golf Sweeper!</h1>
+        <p>Click to putt the golf ball!<br/>
+            Clear every space or reach the green circle to win!<br/>
+            A number on a space tells you how many mines are next to it! (diagonals included)<br/>
+            Right click a space to flag it as a mine!
+        </p>
+        <p id="mineCount"></p>
+        <button id="level1" onclick="drawMines(this.id)">Level 1!</button>
+        <button id="level2" onclick="drawMines(this.id)">Level 2!</button>
+        <button id="level3" onclick="drawMines(this.id)">Level 3!</button>
+        <button id="level4" onclick="drawMines(this.id)">Level 4!</button>
+        <button id="level5" onclick="drawMines(this.id)">Level 5!</button>
+        <canvas id="gSCanvas" width="600" height="600"></canvas>
+        <script src="TLJava.js"></script>
+    </head>
+    <body>
+        <button id="dev" onclick="drawMines(this.id)">button</button>
+        <p id="console"></p>
+        <p id="puttCount"></p>
+        <p id="score"></p>
+    </body>
+</html>
