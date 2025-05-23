@@ -7,8 +7,6 @@ const ctx = canvas.getContext("2d");
 
 //variables
 let ball = { x: 100, y: 100, speedx: 0, speedy: 0 };
-let mineTest = { x: 0 * tileSize, y: 9 * tileSize, revealed: 0, mine: 1};
-let cellTest = { x: 100, y: 200, revealed: 0, mine: 0};
 
 let puttCount = 0;
 
@@ -92,14 +90,7 @@ function updateGame() {
     friction();
     drawBall();
     checkBoundry();
-    drawMines();
 }
-
-function drawMines(clicked_id) {
-  ctx.fillStyle = "green"
-  ctx.fillRect(mineTest.x, mineTest.y, tileSize, tileSize);
-}
-
 
 setInterval(updateGame, 50);
 
