@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  table {
+    border-spacing: 5px;
+  }
